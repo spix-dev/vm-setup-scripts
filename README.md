@@ -3,7 +3,7 @@
 ## Quick Install
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/spix-dev/vm-setup-scripts/main/setup.sh | bash
+wget -qO- https://raw.githubusercontent.com/spix-dev/vm-setup-scripts/master/setup.sh | bash
 ```
 
 ---
@@ -43,7 +43,7 @@ The script will ask you for:
 If you prefer to review the script before running:
 
 ```bash
-wget https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/setup.sh
+wget https://raw.githubusercontent.com/spix-dev/vm-setup-scripts/master/setup.sh
 chmod +x setup.sh
 ./setup.sh
 ```

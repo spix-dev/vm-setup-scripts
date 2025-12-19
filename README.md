@@ -3,7 +3,9 @@
 ## Quick Install
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/spix-dev/vm-setup-scripts/master/setup.sh | bash
+wget https://raw.githubusercontent.com/spix-dev/vm-setup-scripts/master/setup.sh
+chmod +x setup.sh
+./setup.sh
 ```
 
 ---
@@ -37,16 +39,6 @@ The script will ask you for:
 4. **System User Password** - New sudo password for the user
 5. **GitHub Username** - To fetch your SSH public keys
 6. **Docker Installation** - Whether to install Docker (y/N)
-
-## Manual Installation
-
-If you prefer to review the script before running:
-
-```bash
-wget https://raw.githubusercontent.com/spix-dev/vm-setup-scripts/master/setup.sh
-chmod +x setup.sh
-./setup.sh
-```
 
 ## Post-Setup Steps
 

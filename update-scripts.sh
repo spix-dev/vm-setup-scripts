@@ -7,7 +7,8 @@ if ! command -v git &> /dev/null; then
 fi
 
 git clone https://github.com/spix-dev/vm-setup-scripts.git
-cd vm-setup-scripts
+mv -f vm-setup-scripts/* .
+rm -rf vm-setup-scripts
 chmod +x *.sh
 
 echo "Scripts downloaded successfully!"

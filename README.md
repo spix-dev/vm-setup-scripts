@@ -71,7 +71,8 @@ chmod +x update-scripts.sh
 ## What This Does
 
 - Automatically installs git if not already present
-- Clones the entire repository into a `vm-setup-scripts` directory
+- Clones the entire repository and moves all scripts to the current directory
+- Overwrites existing scripts with the latest versions
 - Makes all scripts executable
 - Future-proof: automatically includes any new scripts added to the repository
 

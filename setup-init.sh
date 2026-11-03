@@ -72,6 +72,10 @@ else
   echo "PasswordAuthentication no" | sudo tee -a /etc/ssh/sshd_config >/dev/null
 fi
 
+# sshd -t needs the privilege separation directory, which may not exist yet
+# on fresh installs where ssh is socket-activated and has never started
+sudo mkdir -p /run/sshd
+
 log "Testing sshd configuration..."
 sudo sshd -t || { err "sshd configuration test failed. Restoring backup..."; sudo mv /etc/ssh/sshd_config.bak.* /etc/ssh/sshd_config; exit 1; }
 log "Reloading ssh service..."
